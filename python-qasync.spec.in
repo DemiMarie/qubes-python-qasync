@@ -1,0 +1,51 @@
+# Created by pyp2rpm-3.3.4
+%global pypi_name qasync
+
+Name:           python-%{pypi_name}
+Version:        @VERSION@
+Release:        @REL@%{?dist}
+Summary:        Implementation of the PEP 3156 Event-Loop with Qt
+
+License:        BSD
+URL:            https://github.com/CabbageDevelopment/qasync
+Source0:        %{pypi_source}
+BuildArch:      noarch
+
+BuildRequires:  python%{python3_pkgversion}-devel
+BuildRequires:  python3dist(setuptools)
+
+%description
+qasync allows you to use coroutines in PyQt/PySide applications by
+providing an implementation of the PEP 3156 event-loop. qasync is a fork of
+asyncqt which is a fork of quamash. May it live longer than its
+predecessors.
+
+%package -n     python%{python3_pkgversion}-%{pypi_name}
+Summary:        %{summary}
+%{?python_provide:%python_provide python%{python3_pkgversion}-%{pypi_name}}
+
+%description -n python%{python3_pkgversion}-%{pypi_name}
+qasync allows you to use coroutines in PyQt/PySide applications by
+providing an implementation of the PEP 3156 event-loop. qasync is a fork of
+asyncqt which is a fork of quamash. May it live longer than its
+predecessors.
+
+%prep
+%autosetup -n %{pypi_name}-%{version}
+# Remove bundled egg-info
+rm -rf %{pypi_name}.egg-info
+
+%build
+%py3_build
+
+%install
+%py3_install
+
+%files -n python%{python3_pkgversion}-%{pypi_name}
+%license LICENSE
+%doc README.md
+%{python3_sitelib}/%{pypi_name}
+%{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
+
+%changelog
+@CHANGELOG@

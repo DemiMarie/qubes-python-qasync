@@ -1,0 +1,5 @@
+python-qasync (0.9.4-1) unstable; urgency=medium
+
+  * New packaging
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Tue, 02 Jun 2020 22:10:38 +0200

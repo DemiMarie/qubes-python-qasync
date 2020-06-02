@@ -1,0 +1,22 @@
+Source: python-qasync
+Section: python
+Priority: optional
+Maintainer: Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>
+Build-Depends:
+ python3-pyqt5,
+ python3-setuptools, python3-all, dh-python, debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/CabbageDevelopment/qasync
+Vcs-Git: https://github.com/CabbageDevelopment/qasync
+Vcs-Browser: https://github.com/CabbageDevelopment/qasync
+
+Package: python3-qasync
+Architecture: all
+Depends:
+ ${python3:Depends},
+ ${misc:Depends}
+Description: Implementation of the PEP 3156 Event-Loop with Qt
+ qasync allows you to use coroutines in PyQt/PySide applications by
+ providing an implementation of the PEP 3156 event-loop. qasync is a fork of
+ asyncqt which is a fork of quamash. May it live longer than its
+ predecessors.
