@@ -12,7 +12,7 @@ Source0:        %{pypi_source}
 BuildArch:      noarch
 
 BuildRequires:  python%{python3_pkgversion}-devel
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python%{python3_pkgversion}-setuptools
 
 %description
 qasync allows you to use coroutines in PyQt/PySide applications by
