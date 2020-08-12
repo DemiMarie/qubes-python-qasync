@@ -1,3 +1,10 @@
+python-qasync (0.9.4-2) unstable; urgency=medium
+
+  * Build for Debian bullseye and centos too
+  * rpm: don't use Fedora-specific python virtual packages
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Wed, 12 Aug 2020 18:28:19 +0200
+
 python-qasync (0.9.4-1) unstable; urgency=medium
 
   * New packaging
