@@ -1,4 +1,4 @@
-VERSION := $(shell cat version)
+VERSION := $(file <version)
 URL := https://files.pythonhosted.org/packages/source/q/qasync/qasync-$(VERSION).tar.gz
 
 SRC_FILE = $(notdir $(URL))
