@@ -1,6 +1,7 @@
 DEBIAN_BUILD_DIRS.vm-stretch := debian-pkg/debian
 DEBIAN_BUILD_DIRS.vm-buster := debian-pkg/debian
 DEBIAN_BUILD_DIRS.vm-bullseye := debian-pkg/debian
+DEBIAN_BUILD_DIRS.vm-bookworm := debian-pkg/debian
 DEBIAN_BUILD_DIRS := $(DEBIAN_BUILD_DIRS.$(PACKAGE_SET)-$(DIST))
 RPM_SPEC_FILES := python-qasync.spec
 
