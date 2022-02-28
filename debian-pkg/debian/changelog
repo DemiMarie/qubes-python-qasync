@@ -1,3 +1,17 @@
+python-qasync (0.23.0-1) unstable; urgency=medium
+
+  [ Marek Marczykowski-Górecki ]
+  * Add gitlab-ci
+
+  [ Demi Marie Obenour ]
+  * Switch from wget to curl
+  * Use $(file <) instead of $(shell cat)
+
+  [ Marek Marczykowski-Górecki ]
+  * Enable build for bookworm too
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Mon, 28 Feb 2022 22:19:30 +0100
+
 python-qasync (0.9.4-2) unstable; urgency=medium
 
   * Build for Debian bullseye and centos too
