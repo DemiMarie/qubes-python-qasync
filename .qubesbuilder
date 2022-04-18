@@ -1,0 +1,15 @@
+host:
+  rpm:
+    spec:
+    - python-qasync.spec
+vm:
+  rpm:
+    spec:
+    - python-qasync.spec
+  deb:
+    build:
+    - debian-pkg/debian
+source:
+  files:
+  - url: https://files.pythonhosted.org/packages/source/q/qasync/qasync-0.23.0.tar.gz
+    sha256: qasync-0.23.0.tar.gz.sha256
