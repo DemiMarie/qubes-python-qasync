@@ -1,3 +1,12 @@
+python-qasync (0.23.0-2) unstable; urgency=medium
+
+  [ Frédéric Pierret (fepitre) ]
+  * Drop Travis CI
+  * Add Qubes Builder v2 integration
+  * .qubesbuilder: replace 'spec' by 'build'
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Wed, 12 Oct 2022 03:39:15 +0200
+
 python-qasync (0.23.0-1) unstable; urgency=medium
 
   [ Marek Marczykowski-Górecki ]
