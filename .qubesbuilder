@@ -9,6 +9,9 @@ vm:
   deb:
     build:
     - debian-pkg/debian
+vm-jammy:
+  deb:
+    build: []
 source:
   files:
   - url: https://files.pythonhosted.org/packages/source/q/qasync/qasync-@VERSION@.tar.gz
