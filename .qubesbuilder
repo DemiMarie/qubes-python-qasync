@@ -11,5 +11,5 @@ vm:
     - debian-pkg/debian
 source:
   files:
-  - url: https://files.pythonhosted.org/packages/source/q/qasync/qasync-0.23.0.tar.gz
-    sha256: qasync-0.23.0.tar.gz.sha256
+  - url: https://files.pythonhosted.org/packages/source/q/qasync/qasync-@VERSION@.tar.gz
+    sha256: qasync-@VERSION@.tar.gz.sha256
