@@ -3,8 +3,13 @@ Section: python
 Priority: optional
 Maintainer: Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>
 Build-Depends:
+ pybuild-plugin-pyproject,
+ python3-poetry-core,
  python3-pyqt5,
- python3-setuptools, python3-all, dh-python, debhelper (>= 9)
+ python3-setuptools,
+ python3-all,
+ dh-python,
+ debhelper (>= 13)
 Standards-Version: 3.9.5
 Homepage: https://github.com/CabbageDevelopment/qasync
 Vcs-Git: https://github.com/CabbageDevelopment/qasync
