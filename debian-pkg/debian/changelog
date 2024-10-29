@@ -1,3 +1,13 @@
+python-qasync (0.27.1-1) unstable; urgency=medium
+
+  * CI: switch to R4.3
+  * Use VERSION placeholder in .qubesbuilder
+  * deb: Adjust packaging for poetry build
+  * rpm: Adjust build for poetry build
+  * Disable build on Ubuntu Jammy
+
+ -- Marek Marczykowski-Górecki <marmarek@invisiblethingslab.com>  Tue, 29 Oct 2024 15:39:41 +0100
+
 python-qasync (0.23.0-2) unstable; urgency=medium
 
   [ Frédéric Pierret (fepitre) ]
